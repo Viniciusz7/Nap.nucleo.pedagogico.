@@ -1,0 +1,20 @@
+function enviarWhatsApp() {
+  const nomeAluno = document.getElementById("nomeAluno").value;
+  const nomeResponsavel = document.getElementById("nomeResponsavel").value;
+  const email = document.getElementById("email").value;
+  const escola = document.getElementById("escola").value;
+  const cargo = document.getElementById("cargo").value;
+  const telefone = document.getElementById("telefone").value;
+  const financeiro = document.getElementById("financeiro").value;
+  const necessidades = document.getElementById("necessidades").value;
+
+
+  const numero = "5511951647585";
+
+  
+  const mensagem = `📚 Nova matrícula!\n\n👦 Aluno: ${nomeAluno}\n👨‍👩‍👧 Responsável: ${nomeResponsavel}\n📧 Email: ${email}\n🏫 Escola: ${escola}\n📖 Reforço: ${cargo}\n📞 Telefone: ${telefone}\n📝 Necessidades: ${necessidades}\n💰 Responsável financeiro: ${financeiro}`;
+
+
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  window.open(url, "_blank");
+}

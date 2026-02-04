@@ -1,0 +1,201 @@
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #c75eeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#home {
+  color: #000000;
+}
+
+body {
+  /*height: 100vh;*/ /*pegar a tela inteira*/
+  box-sizing: border-box;
+  background-color: white; /* cor do fundo */
+  color: black; /*cor da letra */
+}
+.img {
+  background-image: url(../img/favicon.jpg);
+  width: 50%; /* widht largura*/
+  height: 50%; /* height altura*/
+  border-radius: 16px;
+}
+.icone__casa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img__escola {
+  width: 40px;
+}
+.img__escola:hover {
+  transform: scale(1.2);
+}
+strong {
+  color: #ff0000;
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+.cabecalho__menu__link {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #944dac;
+  text-decoration: none; /*sem __*/
+  border-radius: 16px;
+}
+
+.cabecalho__menu__link:hover {
+  color: #c75eeb;
+  transform: scale(1.2);
+}
+
+.apresentacao {
+  padding: 5% 15%; /*dois valores = primeiro valor encima-baixo . segundo valor esquerda-direita*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+asaimg {
+  width: 50%; /* widht largura*/
+  height: 50%; /* height altura*/
+  border-radius: 16px;
+}
+.linha__menu {
+  height: 1px;
+  width: 100%;
+  background-color: #c75eeb;
+}
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* espaçamento de cada alemento */
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2.25rem; /*fonte-size = tamanho da letra*/ /*cada REM =16px*/
+  font-family: cursive;
+}
+.apresentacao__conteudo__texto {
+  font-size: 24px;
+}
+.apresentacao__links {
+  display: flex; /* deixar o conteudo livre*/
+  flex-direction: column; /*deixar as coias na vertical*/
+  justify-content: space-between; /* um do lado outro do outro*/
+  align-items: center; /*deixar os intems alinhados */
+  gap: 32px; /*espaco entre os intems */
+}
+.apresentacao__links__subtitulo {
+  font-size: 1.5rem; /*tamanho da fonte*/
+  color: #c75eeb;
+  font-weight: 600;
+}
+.apresentacao__links__link {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 50%;
+  text-align: center; /*alinhando o texto*/
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600; /* peso da fonte*/
+  padding: 21.5px 0px;
+  text-decoration: none; /*sem decoracao __*/
+  color: black;
+  border: 2px solid #c75eeb; /*tamanhao da borda - estado da borda - cor da borda*/
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.apresentacao__links__link:hover {
+  /*mudar a cor quando o mouse passa por cima */
+  background-color: #c75eeb;
+  transform: scale(1.1);
+}
+
+.rodape {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center; /* alinhamento de texto*/
+  padding: 24px;
+  color: #000000;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.logo_rodape {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 16px;
+}
+
+.img-bruna {
+  width: 50%; /* widht largura*/
+  height: 50%; /* height altura*/
+  border-radius: 16px;
+}
+.img-bruna:hover {
+  transform: scale(1.02);
+}
+#jeronimo {
+  color: #034dad;
+}
+#jeronimo:hover {
+  color: #006eff;
+  transform: scale(1.2);
+}
+#home:hover {
+  transform: scale(1.2); /* Aumenta 20% (1.2x) */
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
+}
+
+.link-redes__Sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #c75eeb;
+  border-radius: 16px;
+  font-weight: 700;
+  padding: 16px;
+  font-size: 1rem;
+}
